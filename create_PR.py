@@ -11,7 +11,7 @@ def get_ticketName():
         if(branch.find("*") > -1):
             currentbranch = branch
 
-    if(currentbranch == "master" or currentbranch == ""):
+    if(currentbranch == ""):
         raise "Brach not setted"
 
     ticket = currentbranch[-10:]
@@ -32,6 +32,9 @@ def get_infoFromJira(ticket):
     summary = issue.fields.summary
     return (ticket, summary)
 
+def get_path_to_image_folder():
+    return "C:\Users\abdul rehman\Desktop\crossover\tickets resolved"
+
 
 ticket = get_ticketName()
 
@@ -40,5 +43,12 @@ summary = get_infoFromJira(ticket)
 g = Github("689f3e24afe3f6d71986c8d805ebd69fa00b589a")
 
 repo = g.get_repo("abdulrehman135/automation", lazy=False)
-repo.create_pull
+
+title = ticket+ " - " + summary;
+body = "**Test Case Passes**\n"
+body +=  
+
+repo.create_pull(, )
+
+
 
