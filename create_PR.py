@@ -19,8 +19,8 @@ def get_ticketName():
 
 def get_infoFromJira(ticket):
     from jira import JIRA
-    user = 'abdul.mirza@trilogy.com'
-    apikey = 'duPpBsVDKl26pigN30BU3559'
+    user = 'abc@trilogy.com'
+    apikey = '********************'
     server = 'https://crossover.atlassian.net/'
 
     options = {
@@ -40,7 +40,7 @@ ticket = get_ticketName()
 
 summary = get_infoFromJira(ticket)
 
-g = Github("689f3e24afe3f6d71986c8d805ebd69fa00b589a")
+g = Github("*************************")
 
 repo = g.get_repo("abdulrehman135/automation", lazy=False)
 
