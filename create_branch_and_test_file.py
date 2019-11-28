@@ -8,8 +8,8 @@ def get_ticketName():
 
 def get_infoFromJira(ticket):
     from jira import JIRA
-    user = 'abdul.mirza@trilogy.com'
-    apikey = 'duPpBsVDKl26pigN30BU3559'
+    user = 'abc@trilogy.com'
+    apikey = '***************'
     server = 'https://crossover.atlassian.net/'
 
     options = {
